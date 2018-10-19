@@ -1,0 +1,24 @@
+{
+  "name": "isubyo",
+  "version": "1.0.0",
+  "description": "Isubyo House of Arts website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-sass": "nodemon -e scss -x \"npm run sass\""
+  },
+  "keywords": [
+    "Isubyo",
+    "House",
+    "Arts",
+    "Furniture"
+  ],
+  "author": "Elie Mugenzi",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
