@@ -391,6 +391,14 @@ section#showcase {
     position: relative;
     left: 40%; }
 
+#products .more {
+  margin: auto 40%;
+  margin-top: 20px; }
+  @media (max-width: 768px) {
+    #products .more {
+      margin: auto 20%;
+      margin-top: 20px; } }
+
 #products .products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
