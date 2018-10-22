@@ -9,11 +9,14 @@ $(document).ready(() => {
   $(".toggle").on("click", () => {
     $(".toggle").toggleClass("active");
     $(".menu-wrapper").toggleClass("open");
+    $(".search-section").removeClass("open");
   });
 
   $(".search button").on("click", () => {
     $(".search-section").toggleClass("open");
     $(".search button").toggleClass("dark");
+    $(".menu-wrapper").removeClass("open");
+    $(".toggle").removeClass("active");
   });
 
   let typed = new Typed(".typed", {
@@ -21,10 +24,4 @@ $(document).ready(() => {
   });
 });
 
-$(document).scroll(() => {
-  if ($(document).scrollTop() > 100) {
-    $("nav").addClass("shrink");
-  } else {
-    $("nav").removeClass("shrink");
-  }
-});
+

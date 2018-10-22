@@ -27,8 +27,13 @@ $desktop-max: 1024px;
   padding: 1rem 5rem;
   cursor: pointer;
   text-decoration: none;
+  outline: none;
+  border: none;
   @include mediaSm {
     padding: 1rem 2rem;
+  }
+  &.btn-sm {
+    padding: 1rem 3rem;
   }
 }
 .btn-light {
@@ -81,6 +86,12 @@ $desktop-max: 1024px;
 
 .line {
   width: 100px;
+  height: 4px;
+  background: $dark-color;
+}
+
+.line-sm {
+  width: 50px;
   height: 4px;
   background: $dark-color;
 }

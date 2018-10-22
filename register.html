@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Isubyo House of Arts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+
+</head>
+
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="toggle">
+                <div class="h-line"></div>
+                <div class="h-line"></div>
+            </div>
+            <div class="logo">
+                <img src="http://isubyo.com/logo.png" alt="">
+            </div>
+            <div class="search">
+                <button class="search-btn">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-wrapper">
+        <div class="menu-grid">
+            <div class="menu">
+                <div class="menu-title">
+                    <h2 class="title">Store</h2>
+                    <div class="long-line"></div>
+                </div>
+                <ul>
+                    <li><a href="">Latest</a></li>
+                    <li><a href="">Furnitures</a></li>
+                    <li><a href="">Portraits</a></li>
+                    <li><a href="">Lamps</a></li>
+                    <li><a href="">Kitchens</a></li>
+                    <li><a href="">Gardens</a></li>
+                    <li><a href="">Arts</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <div class="menu-title">
+                    <h2 class="title">About</h2>
+                    <div class="long-line"></div>
+                </div>
+                <ul>
+                    <li><a href="">Story</a></li>
+                    <li><a href="">Magazines</a></li>
+                    <li><a href="">Sustainability</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <div class="menu-title">
+                    <h2 class="title">Account</h2>
+                    <div class="long-line"></div>
+                </div>
+                <ul>
+                    <li><a href="">Log In</a></li>
+                    <li><a href="">Create Account</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="search-section">
+        <form action="">
+            <input type="search" name="" id="search" placeholder="Search on this website">
+            <input type="submit" value="Search" class="btn bg-dark">
+        </form>
+    </div>
+    <section id="register">
+        <div class="container">
+            <div class="header">
+                <h1>Create Account</h1>
+            </div>
+            <form action="">
+                <div class="field">
+                    <label for="">First Name*</label>
+                    <input type="text" name="firstname" id="first">
+                </div>
+                <div class="field">
+                    <label for="">Last name*</label>
+                    <input type="text" name="lastname" id="last">
+                </div>
+                <div class="field">
+                    <label for="">Email Address*</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="field">
+                    <label for="">Phone*</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+                <div class="field">
+                    <label for="">Create Password*</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="field">
+                    <label for="">Confirm Password</label>
+                    <input type="password" name="confirm" id="confirm">
+                </div>
+                <input type="submit" value="Register" class="btn btn-dark">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="brand">
+                <img src="http://isubyo.com/logo.png" alt="">
+            </div>
+            <div class="contacts">
+                <h3>&copy; 2018 All Rights reserved</h3> <br>
+                <div class="social-links">
+                    <a href=""><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href=""><i class="fa fa-twitter fa-2x"></i></a>
+                    <a href=""><i class="fa fa-instagram fa-2x"></i></a>
+                    <a href=""><i class="fa fa-envelope fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+<script src="./js/main.js"></script>
+<script>
+    $(document).ready(() => {
+        $('nav').addClass('shrink');
+    })
+</script>
+
+</html>

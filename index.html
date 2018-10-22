@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Isubyo House of Arts</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
 
@@ -64,8 +64,8 @@
                     <div class="long-line"></div>
                 </div>
                 <ul>
-                    <li><a href="">Log In</a></li>
-                    <li><a href="">Create Account</a></li>
+                    <li><a href="login.html">Log In</a></li>
+                    <li><a href="register.html">Create Account</a></li>
                 </ul>
             </div>
         </div>
@@ -78,10 +78,16 @@
     </div>
     <section id="showcase">
         <div class="intro">
-            <h1>Isubyo House of Arts</h1>
-            <h2>Made <span class="typed"></span></h2>
+            <div class="intro-wrapper">
+                <h1>Isubyo House of Arts</h1>
+                <h2>Made <span class="typed"></span></h2>
+            </div>
+
             <div class="scroll-down">
-                <i class="fa fa-long-arrow-down fa-2x"></i>
+                <div class="arrow-container">
+                    <div class="arrow arrow-first"></div>
+                    <div class="arrow arrow-second"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -110,7 +116,7 @@
                 <div class="product-img">
                     <img src="http://isubyo.com/images/7bb112cdd59e53bb8f8a3546e3446bce.jpg" alt="">
                 </div>
-                <a class="product-desc" href="#">
+                <a class="product-desc" href="details.html">
                     <strong class="product-title">Coffee table</strong>
                     <p>Furniture &middot; RWF 140,000</p>
                 </a>
@@ -119,7 +125,7 @@
                 <div class="product-img">
                     <img src="http://isubyo.com/images/IMG-20180810-WA0016.jpg" alt="">
                 </div>
-                <a class="product-desc" href="#">
+                <a class="product-desc" href="details.html">
                     <strong class="product-title">Hope Light</strong>
                     <p>Portrait &middot; RWF 140,000</p>
                 </a>
@@ -128,7 +134,7 @@
                 <div class="product-img">
                     <img src="http://isubyo.com/images/IMG-20180806-WA0006.jpg" alt="">
                 </div>
-                <a class="product-desc" href="#">
+                <a class="product-desc" href="details.html">
                     <strong class="product-title">Wedding Chair</strong>
                     <p>Furniture &middot; RWF 140,000</p>
                 </a>
@@ -137,7 +143,7 @@
                 <div class="product-img">
                     <img src="http://isubyo.com/images/IMG_20180627_223344_808.JPG" alt="">
                 </div>
-                <a class="product-desc" href="#">
+                <a class="product-desc" href="details.html">
                     <strong class="product-title">Home Decoration</strong>
                     <p>Furniture &middot; RWF 140,000</p>
                 </a>
@@ -146,7 +152,7 @@
                 <div class="product-img">
                     <img src="http://isubyo.com/images/deb960e0c40f37474d7efc0120dc6afb.jpg" alt="">
                 </div>
-                <a class="product-desc" href="#">
+                <a class="product-desc" href="details.html">
                     <strong class="product-title">Tables</strong>
                     <p>Furniture &middot; RWF 140,000</p>
                 </a>
@@ -155,7 +161,7 @@
                 <div class="product-img">
                     <img src="http://isubyo.com/images/8e5c5a8617ea99a020554dca86fc3018.jpg" alt="">
                 </div>
-                <a class="product-desc" href="#">
+                <a class="product-desc" href="details.html">
                     <strong class="product-title">Iginga Made in Rwanda</strong>
                     <p>Furniture &middot; RWF 140,000</p>
                 </a>
@@ -164,8 +170,8 @@
                 <div class="product-img">
                     <img src="http://isubyo.com/images/test%20(1).jpg" alt="">
                 </div>
-                <a class="product-desc" href="#">
-                    <strong class="product-title">Laptop Holder</strong>
+                <a class="product-desc" href="details.html">
+                    <strong class="product-title">Glass Holder</strong>
                     <p>Furniture &middot; RWF 140,000</p>
                 </a>
             </div>
@@ -173,7 +179,7 @@
                 <div class="product-img">
                     <img src="http://isubyo.com/images/2167713f4ffbe9120ce969e202f115f9.jpg" alt="">
                 </div>
-                <a class="product-desc" href="#">
+                <a class="product-desc" href="details.html">
                     <strong class="product-title">Imigwegwe Lamps</strong>
                     <p>Lamps &middot; RWF 140,000</p>
                 </a>
@@ -182,7 +188,7 @@
                 <div class="product-img">
                     <img src="http://isubyo.com/images/test%20(2).jpg" alt="">
                 </div>
-                <a class="product-desc" href="#">
+                <a class="product-desc" href="details.html">
                     <strong class="product-title">Smartphone Holder</strong>
                     <p>Furniture &middot; RWF 140,000</p>
                 </a>
@@ -209,5 +215,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
 <script src="./js/main.js"></script>
+<script>
+    $(document).scroll(() => {
+        if ($(document).scrollTop() > 100) {
+            $("nav").addClass("shrink");
+        } else {
+            $("nav").removeClass("shrink");
+        }
+    });
+</script>
 
 </html>

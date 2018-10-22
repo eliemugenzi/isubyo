@@ -14,3 +14,20 @@
 @mixin transDelay($s) {
   transition-delay: $s;
 }
+
+@mixin shrink{
+  background: $white-color;
+    .wrapper {
+      .toggle {
+        .h-line {
+          background: $dark-color;
+        }
+      }
+      .search {
+        .search-btn {
+          color: $dark-color;
+        }
+      }
+    }
+    @include easeOut(0.5s);
+}
