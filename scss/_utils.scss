@@ -81,7 +81,21 @@ $desktop-max: 1024px;
   background: $dark-color;
 }
 .title {
-  font-size: 35px;
+  font-size: 45px;
+  &__light {
+    font-size: 35px;
+    color: $white-color;
+    @include mediaMd {
+      font-size: 25px;
+    }
+  }
+  &__dark {
+    font-size: 35px;
+    color: $dark-color;
+    @include mediaMd {
+      font-size: 25px;
+    }
+  }
 }
 
 .line {
@@ -94,4 +108,56 @@ $desktop-max: 1024px;
   width: 50px;
   height: 4px;
   background: $dark-color;
+}
+
+.mb {
+  &__sm {
+    margin-bottom: 5px;
+  }
+  &__md {
+    margin-bottom: 15px;
+  }
+  &__lg {
+    margin-bottom: 25px;
+  }
+}
+
+.paragraph {
+  margin: auto 8%;
+  font-size: 100%;
+}
+
+.section {
+  margin: 50px auto;
+}
+.field {
+  margin-bottom: 5px;
+  width: 100%;
+  label {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 80%;
+    position: relative;
+    border-bottom: 1px solid $dark-color;
+    background: transparent;
+  }
+  textarea {
+    border: none;
+    outline: none;
+    width: 80%;
+    height: 100px;
+    border-bottom: 1px solid $dark-color;
+    background: transparent;
+  }
+}
+input[type="submit"] {
+  font-family: "Niramit", sans-serif;
 }

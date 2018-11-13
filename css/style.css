@@ -62,7 +62,19 @@
   background: #000; }
 
 .title {
-  font-size: 35px; }
+  font-size: 45px; }
+  .title__light {
+    font-size: 35px;
+    color: #fff; }
+    @media (max-width: 768px) {
+      .title__light {
+        font-size: 25px; } }
+  .title__dark {
+    font-size: 35px;
+    color: #000; }
+    @media (max-width: 768px) {
+      .title__dark {
+        font-size: 25px; } }
 
 .line {
   width: 100px;
@@ -73,6 +85,50 @@
   width: 50px;
   height: 4px;
   background: #000; }
+
+.mb__sm {
+  margin-bottom: 5px; }
+
+.mb__md {
+  margin-bottom: 15px; }
+
+.mb__lg {
+  margin-bottom: 25px; }
+
+.paragraph {
+  margin: auto 8%;
+  font-size: 100%; }
+
+.section {
+  margin: 50px auto; }
+
+.field {
+  margin-bottom: 5px;
+  width: 100%; }
+  .field label {
+    width: 100%;
+    position: relative;
+    display: inline-block; }
+  .field input[type="text"],
+  .field input[type="email"],
+  .field input[type="password"] {
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 80%;
+    position: relative;
+    border-bottom: 1px solid #000;
+    background: transparent; }
+  .field textarea {
+    border: none;
+    outline: none;
+    width: 80%;
+    height: 100px;
+    border-bottom: 1px solid #000;
+    background: transparent; }
+
+input[type="submit"] {
+  font-family: "Niramit", sans-serif; }
 
 @keyframes fadeUp {
   from {
@@ -119,6 +175,12 @@
   100% {
     opacity: 0; } }
 
+.line__vert {
+  width: 3px;
+  height: 55px;
+  background: #000;
+  margin-right: 20px; }
+
 body {
   font-family: "Niramit", sans-serif;
   margin: 0;
@@ -131,6 +193,7 @@ nav {
   position: fixed;
   z-index: 50;
   background: transparent;
+  top: 0;
   transition: 0.5s ease-out; }
   nav.shrink {
     background: #fff;
@@ -444,7 +507,10 @@ section#showcase {
     transform: translateY(40px);
     text-decoration: none;
     color: #000;
+    display: flex;
     transition: 0.5s ease-out; }
+    #products .product .product-desc .line__vert {
+      margin-left: 20px; }
     #products .product .product-desc .product-title,
     #products .product .product-desc p {
       margin-left: 10%; }
@@ -574,3 +640,58 @@ footer {
         background: transparent; }
     #login .container form input[type="submit"] {
       font-family: "Niramit", sans-serif; }
+
+.story {
+  margin-top: 50px;
+  padding: 20px; }
+  .story__container {
+    display: flex; }
+    @media (max-width: 768px) {
+      .story__container {
+        display: block; } }
+  .story__img {
+    flex-basis: 50%; }
+    @media (max-width: 768px) {
+      .story__img {
+        display: inline-block;
+        margin-right: 10px; }
+        .story__img img {
+          position: relative;
+          width: 100%;
+          height: 100%; } }
+  .story__info {
+    flex-basis: 50%; }
+    @media (max-width: 768px) {
+      .story__info {
+        display: inline-block; } }
+    .story__info .title__dark {
+      margin-left: 10%; }
+
+.contact {
+  margin: auto 10%;
+  padding: 20px; }
+  .contact__container {
+    margin-top: 20px;
+    display: flex; }
+    @media (max-width: 768px) {
+      .contact__container {
+        display: block; } }
+  .contact__form {
+    margin-top: 20px;
+    flex-basis: 50%; }
+    @media (max-width: 768px) {
+      .contact__form {
+        display: inline-block; } }
+  .contact__social {
+    flex-basis: 50%;
+    display: inline-block; }
+    .contact__social--grid {
+      display: flex; }
+    .contact__social--icon {
+      margin-right: 30px; }
+      .contact__social--icon a i.fa {
+        color: #000;
+        transition: 0.5s ease-out; }
+        .contact__social--icon a i.fa:hover {
+          color: #c8d6d0;
+          transition: 0.5s ease-out; }

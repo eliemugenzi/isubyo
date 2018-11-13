@@ -19,6 +19,7 @@ nav {
   position: fixed;
   z-index: 50;
   background: transparent;
+  top: 0;
   @include easeOut(0.5s);
   &.shrink {
     background: $white-color;
@@ -415,6 +416,12 @@ section#showcase {
       transform: translateY(40px);
       text-decoration: none;
       color: $dark-color;
+      display: flex;
+      .line {
+        &__vert {
+          margin-left: 20px;
+        }
+      }
       @include easeOut(0.5s);
       .product-title,
       p {
@@ -586,6 +593,80 @@ footer {
       }
       input[type="submit"] {
         font-family: "Niramit", sans-serif;
+      }
+    }
+  }
+}
+
+.story {
+  margin-top: 50px;
+  padding: 20px;
+  &__container {
+    display: flex;
+    @include mediaMd {
+      display: block;
+    }
+  }
+  &__img {
+    flex-basis: 50%;
+    @include mediaMd {
+      display: inline-block;
+      margin-right: 10px;
+      img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &__info {
+    flex-basis: 50%;
+    @include mediaMd {
+      display: inline-block;
+    }
+    .title {
+      &__dark {
+        margin-left: 10%;
+      }
+    }
+  }
+}
+
+.contact {
+  margin: auto 10%;
+  padding: 20px;
+  &__container {
+    margin-top: 20px;
+    display: flex;
+    @include mediaMd {
+      display: block;
+    }
+  }
+  &__form {
+    margin-top: 20px;
+    flex-basis: 50%;
+    @include mediaMd {
+      display: inline-block;
+    }
+  }
+  &__social {
+    flex-basis: 50%;
+    display: inline-block;
+    &--grid {
+      display: flex;
+      //justify-content: space-around;
+    }
+    &--icon {
+      margin-right: 30px;
+      a {
+        i.fa {
+          color: $dark-color;
+          @include easeOut(0.5s);
+          &:hover {
+            color: darken($grey-color, 10);
+            @include easeOut(0.5s);
+          }
+        }
       }
     }
   }
